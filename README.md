@@ -2,16 +2,24 @@ pjCmdLine
 ==========
 
 Small command line application to manage video projector using PJLINK Protocol
+PJLINK password authentication is supported
 
-Written in C++ using openFrameworks 0.8.4 on MacOSX 10.9.2
+Note : only on/off function supported for now.
 
-Usage :
-	
+Written in C++ using openFrameworks 0.8.4 on Ubuntu 14.04 LTS
+
+External addons :
+	- ofxArgParser : https://github.com/satoruhiga/ofxArgParser
+	- ofxPJControl : https://github.com/nullboundary/ofxPJControl
+
+Usage : 
+pjCmdLine [-ip address] [-pass password] [-pwr state]
+
+where state = on / off
+
 
 This software is open source and is free to modify and redistribute.
-
 Please enclose source code when redistributing.
-
 Feel free to contribute and share.
 
 License
