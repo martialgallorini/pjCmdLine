@@ -2,6 +2,7 @@ pjCmdLine
 ==========
 
 Small command line application to manage video projector using PJLINK Protocol. 
+
 PJLINK password authentication is supported
 
 Note : only on/off function supported for now.
