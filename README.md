@@ -10,7 +10,9 @@ Note : only on/off function supported for now.
 Written in C++ using openFrameworks 0.8.4 on Ubuntu 14.04 LTS
 
 External addons :
+	
 	- ofxArgParser : https://github.com/satoruhiga/ofxArgParser
+	
 	- ofxPJControl : https://github.com/nullboundary/ofxPJControl
 
 Usage : 
