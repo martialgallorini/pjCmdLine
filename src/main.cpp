@@ -1,12 +1,15 @@
 #include "ofMain.h"
 #include "ofApp.h"
+#include "ofAppNoWindow.h"
 
 #include "ofxArgParser.h"
 
 
 //========================================================================
 int main(int argc, const char** argv){
-	ofSetupOpenGL(1024,768,OF_WINDOW);			// <-------- setup the GL context
+    
+    ofAppNoWindow noWin;
+	ofSetupOpenGL(&noWin, 1024,768,OF_WINDOW);			// <-------- setup the GL context
 
     ofxArgParser::init(argc, argv);
     
