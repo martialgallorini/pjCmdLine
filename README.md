@@ -9,21 +9,35 @@ Note : only on/off function supported for now.
 
 Written in C++ using openFrameworks 0.8.4 on Ubuntu 14.04 LTS
 
-External addons :
+Core Addons : 
+
+	- ofxNetwork
+
+Extra addons :
 	
 	- ofxArgParser : https://github.com/satoruhiga/ofxArgParser
 	
 	- ofxPJControl : https://github.com/nullboundary/ofxPJControl
 
 Usage : 
-pjCmdLine [-ip address] [-pass password] [-pwr state]
+pjCmdLine [-ip address] [-pass password] [-mode protocol] [-pwr state]
 
-where state = on / off
+state = on / off
+protocol = PJLINK / NEC / SANYO / CHRISTIE / EPSON
 
+Check default communication ports before building.
 
 This software is open source and is free to modify and redistribute.
 Please enclose source code when redistributing.
 Feel free to contribute and share.
+
+TODO
+-------
+
+- automatically exit app after command is sent
+
+- close connection and quit after connection problem (bad IP or device not responding) to avoid endless loop
+
 
 License
 -------
