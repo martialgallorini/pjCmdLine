@@ -5,9 +5,37 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    
-    projector.setup(ofxArgParser::getValue("ip"), PJLINK_MODE, ofxArgParser::getValue("pwd"));
-    
+
+    int commMode;
+    int projectorPort;
+    string argMode = ofxArgParser::getValue("mode");
+    if(argMode == "NEC") {
+		commMode = NEC_MODE;
+		projectorPort = NEC_PORT;
+	}
+	else if(argMode == "PJLINK") {
+		commMode = PJLINK_MODE;
+        projectorPort = PJLINK_PORT;
+	}
+    else if(argMode == "CHRISTIE") {
+		commMode = CHRISTIE_MODE;
+        projectorPort = CHRISTIE_PORT;
+	}
+    else if(argMode == "SANYO") {
+		commMode = SANYO_MODE;
+        projectorPort = SANYO_PORT;
+	}
+
+    string pwd;
+    if (ofxArgParser::hasKey("pwd")){
+		pwd = ofxArgParser::getValue("pwd");
+	}
+	else{
+		pwd = "";
+	}
+
+    projector.setup(ofxArgParser::getValue("ip"), projectorPort, commMode, pwd);
+
     if (ofxArgParser::getValue("pwr") == "1")
     {
         projector.On();
@@ -16,7 +44,8 @@ void ofApp::setup(){
     {
         projector.Off();
     }
-    
+
+
 }
 
 //--------------------------------------------------------------
@@ -70,6 +99,6 @@ void ofApp::gotMessage(ofMessage msg){
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
+void ofApp::dragEvent(ofDragInfo dragInfo){
 
 }
