@@ -17,7 +17,7 @@ Extra addons :
 	
 	- ofxArgParser : https://github.com/satoruhiga/ofxArgParser
 	
-	- ofxPJControl : https://github.com/nullboundary/ofxPJControl
+	- ofxPJControl : https://github.com/martialgallorini/ofxPJControl
 
 Usage : 
 pjCmdLine [-ip address] [-pass password] [-mode protocol] [-pwr state]
