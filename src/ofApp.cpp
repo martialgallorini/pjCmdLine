@@ -45,6 +45,7 @@ void ofApp::setup(){
         projector.Off();
     }
 
+    ofExit();
 
 }
 
