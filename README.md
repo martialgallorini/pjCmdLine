@@ -23,6 +23,7 @@ Usage :
 pjCmdLine [-ip address] [-pass password] [-mode protocol] [-pwr state]
 
 state = on / off
+
 protocol = PJLINK / NEC / SANYO / CHRISTIE / EPSON
 
 Check default communication ports before building.
@@ -33,8 +34,6 @@ Feel free to contribute and share.
 
 TODO
 -------
-
-- automatically exit app after command is sent
 
 - close connection and quit after connection problem (bad IP or device not responding) to avoid endless loop
 
