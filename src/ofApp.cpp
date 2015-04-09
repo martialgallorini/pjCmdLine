@@ -22,9 +22,13 @@ void ofApp::setup(){
         projectorPort = CHRISTIE_PORT;
 	}
     else if(argMode == "SANYO") {
-		commMode = SANYO_MODE;
+        commMode = SANYO_MODE;
         projectorPort = SANYO_PORT;
-	}
+    }
+    else if(argMode == "PJDESIGN") {
+        commMode = PJDESIGN_MODE;
+        projectorPort = PJDESIGN_PORT;
+    }
 
     string pwd;
     if (ofxArgParser::hasKey("pwd")){
