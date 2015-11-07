@@ -22,11 +22,7 @@ Extra addons :
 Usage : 
 pjCmdLine [-ip address] [-pass password] [-mode protocol] [-pwr state]
 
-<<<<<<< HEAD
 state = 1 (on) / 0 (off)
-=======
-state = on / off
->>>>>>> origin/master
 
 protocol = PJLINK / NEC / SANYO / CHRISTIE / EPSON
 
